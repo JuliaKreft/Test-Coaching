@@ -1,0 +1,101 @@
+<div aria-label="Cookie-Einstellungen" aria-live="polite" class="cookie-banner" id="cookieBanner" role="dialog">
+<p>
+            Diese Website verwendet Cookies, um den Betrieb sicherzustellen und das Nutzungserlebnis zu verbessern.
+            Mit Klick auf „Alle akzeptieren" stimmen Sie dem Einsatz aller Cookies zu.
+            Mehr Infos in unserer <a href="/datenschutz/">Datenschutzerklärung</a>.
+        </p>
+<div class="cookie-actions">
+<button class="cookie-btn-essential" onclick="acceptCookies('essential')">Nur notwendige</button>
+<button class="cookie-btn-accept" onclick="acceptCookies('all')">Alle akzeptieren</button>
+</div>
+</div>
+<!-- ============================================
+         MODALS: Impressum / Datenschutz / AGB
+    ============================================ -->
+<!-- IMPRESSUM -->
+<!-- DATENSCHUTZ -->
+<!-- AGB -->
+<div aria-labelledby="modal-agb-title" aria-modal="true" class="modal-overlay" id="modal-agb" role="dialog">
+<div class="modal-box">
+<button aria-label="Schließen" class="modal-close" onclick="closeModal('agb')">×</button>
+<h2 id="modal-agb-title">Allgemeine Geschäftsbedingungen (AGB)</h2>
+<h3>1. Geltungsbereich</h3>
+<p>Diese AGB gelten für alle Leistungen und Inhalte, die über diese Website angeboten werden.</p>
+<h3>2. Leistungen</h3>
+<p>Die Website dient der Information über Coaching-, Speaking- und Beratungsleistungen.</p>
+<h3>3. Vertragsschluss</h3>
+<p>Ein Vertrag kommt erst durch individuelle Vereinbarung zwischen Anbieter und Kunde zustande.</p>
+<h3>4. Haftung</h3>
+<p>Es wird keine Garantie für die ständige Verfügbarkeit oder Fehlerfreiheit der Website übernommen.</p>
+<h3>5. Urheberrecht</h3>
+<p>Alle Inhalte dieser Website unterliegen dem Urheberrecht. Eine Vervielfältigung oder Verwendung ist ohne ausdrückliche Zustimmung nicht gestattet.</p>
+<h3>6. Schlussbestimmungen</h3>
+<p>Es gilt das Recht der Bundesrepublik Deutschland, soweit gesetzlich zulässig.</p>
+<div class="modal-divider"></div>
+<h3>Haftungsausschluss</h3>
+<p><strong>Haftung für Inhalte:</strong> Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte wird jedoch keine Gewähr übernommen.</p>
+<p><strong>Haftung für Links:</strong> Diese Website enthält Links zu externen Websites Dritter. Für deren Inhalte übernehmen wir keine Haftung.</p>
+<p><strong>Urheberrecht:</strong> Die auf dieser Website veröffentlichten Inhalte und Werke unterliegen dem deutschen Urheberrecht.</p>
+</div>
+</div>
+<!-- ============================================
+         HEADER / NAVIGATION
+    ============================================ -->
+<header class="site-header" id="siteHeader">
+<div class="header-inner">
+<!-- Name (Center) -->
+<a class="header-name" href="/en/" style="cursor:pointer; text-decoration:none;">
+<span class="brand-title">Julia Kreft</span>
+<span class="header-subtitle-el">Coach &amp; Speaker for Inner Transformation</span>
+</a>
+<!-- Navigation (Right) -->
+<nav class="header-nav">
+<ul class="nav-links">
+<li><a class="nav-coaching-text" href="/en/coaching/" id="nav-coaching">Coaching</a></li>
+<li><a class="nav-speaking-text" href="/en/speaking/" id="nav-speaking">Speaking</a></li>
+<li><a class="nav-contact-text" href="/en/kontakt/" id="nav-contact">Contact</a></li>
+</ul>
+<!-- CALENDLY: Ersetze href mit deinem Calendly-Link -->
+<a class="btn btn-primary nav-cta" href="https://calendly.com/juliakreft" rel="noopener" target="_blank">Work with me</a>
+<!-- Dark Mode Toggle -->
+<button aria-label="Dark Mode umschalten" class="dark-toggle" id="darkToggle" title="Dark Mode umschalten">
+<!-- Moon icon (shown in light mode) -->
+<svg class="icon-moon" color="var(--text-body)" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"></path>
+</svg>
+<!-- Sun icon (shown in dark mode) -->
+<svg class="icon-sun" fill="none" stroke="#e8924a" stroke-width="2" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="5"></circle>
+<line x1="12" x2="12" y1="1" y2="3"></line>
+<line x1="12" x2="12" y1="21" y2="23"></line>
+<line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line>
+<line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line>
+<line x1="1" x2="3" y1="12" y2="12"></line>
+<line x1="21" x2="23" y1="12" y2="12"></line>
+<line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line>
+<line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line>
+</svg>
+</button>
+<!-- Language Toggle -->
+<a aria-label="Sprache wechseln" class="lang-toggle" href="{{ page.alt_url }}" id="langToggle" title="Sprache wechseln"><svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14"><circle cx="12" cy="12" r="10"></circle><line x1="2" x2="22" y1="12" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg><span id="langLabel">{{ page.alt_label }}</span></a>
+</nav>
+<!-- Mobile Toggle -->
+<div class="mobile-toggle" id="mobileToggle">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</header>
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+<div class="mobile-menu-close" id="mobileClose">×</div>
+<a data-close-menu="true" href="/en/">Home</a>
+<a data-close-menu="true" href="/en/coaching/">Coaching</a>
+<a data-close-menu="true" href="/en/speaking/">Speaking</a>
+<a data-close-menu="true" href="/en/kontakt/">Contact</a>
+<a class="btn btn-primary" href="https://calendly.com/juliakreft" rel="noopener" target="_blank">Work with me</a>
+</div>
+<!-- ============================================
+         PAGE 1: HERO / HOME
+    ============================================ -->
