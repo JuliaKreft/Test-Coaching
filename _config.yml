@@ -1,5 +1,6 @@
 title: "Julia Kreft"
 url: "https://juliakreft.de"
+baseurl: "/Test-Coaching"
 description: "Persönlichkeitsentwicklung Coach & Speaker für innere Transformation"
 plugins:
   - jekyll-sitemap

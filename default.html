@@ -7,6 +7,6 @@
 {% if page.lang == 'en' %}{% include chrome-top-en.html %}{% else %}{% include chrome-top-de.html %}{% endif %}
 {{ content }}
 {% if page.lang == 'en' %}{% include footer-en.html %}{% else %}{% include footer-de.html %}{% endif %}
-<script src="/assets/app.js"></script>
+<script src="{{ '/assets/app.js' | relative_url }}"></script>
 </body>
 </html>

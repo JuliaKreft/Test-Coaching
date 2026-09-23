@@ -2,7 +2,7 @@
         <p>
             Diese Website verwendet Cookies, um den Betrieb sicherzustellen und das Nutzungserlebnis zu verbessern.
             Mit Klick auf „Alle akzeptieren" stimmen Sie dem Einsatz aller Cookies zu.
-            Mehr Infos in unserer <a href="/datenschutz/">Datenschutzerklärung</a>.
+            Mehr Infos in unserer <a href="{{ '/datenschutz/' | relative_url }}">Datenschutzerklärung</a>.
         </p>
         <div class="cookie-actions">
             <button class="cookie-btn-essential" onclick="acceptCookies('essential')">Nur notwendige</button>
@@ -48,7 +48,7 @@
     <header class="site-header" id="siteHeader">
         <div class="header-inner">
             <!-- Name (Center) -->
-            <a class="header-name" href="/" style="cursor:pointer; text-decoration:none;">
+            <a class="header-name" href="{{ '/' | relative_url }}" style="cursor:pointer; text-decoration:none;">
                 <span class="brand-title">Julia Kreft</span>
                 <span class="header-subtitle-el">Coach &amp; Speaker f&uuml;r innere Transformation</span>
             </a>
@@ -56,9 +56,9 @@
             <!-- Navigation (Right) -->
             <nav class="header-nav">
                 <ul class="nav-links">
-                    <li><a href="/coaching/" id="nav-coaching" class="nav-coaching-text">Coaching</a></li>
-                    <li><a href="/speaking/" id="nav-speaking" class="nav-speaking-text">Speaking</a></li>
-                    <li><a href="/kontakt/" id="nav-contact" class="nav-contact-text">Contact</a></li>
+                    <li><a href="{{ '/coaching/' | relative_url }}" id="nav-coaching" class="nav-coaching-text">Coaching</a></li>
+                    <li><a href="{{ '/speaking/' | relative_url }}" id="nav-speaking" class="nav-speaking-text">Speaking</a></li>
+                    <li><a href="{{ '/kontakt/' | relative_url }}" id="nav-contact" class="nav-contact-text">Contact</a></li>
                 </ul>
                 <!-- CALENDLY: Ersetze href mit deinem Calendly-Link -->
                 <a href="https://calendly.com/juliakreft" target="_blank" rel="noopener" class="btn btn-primary nav-cta">
@@ -84,7 +84,7 @@
                     </svg>
                 </button>
                 <!-- Language Toggle -->
-                <a class="lang-toggle" id="langToggle" href="/en/" aria-label="Switch to English" title="Switch to English"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span id="langLabel">EN</span></a>
+                <a class="lang-toggle" id="langToggle" href="{{ '/en/' | relative_url }}" aria-label="Switch to English" title="Switch to English"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span id="langLabel">EN</span></a>
             </nav>
 
             <!-- Mobile Toggle -->
@@ -99,10 +99,10 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
         <div class="mobile-menu-close" id="mobileClose">&times;</div>
-        <a href="/" data-close-menu="true">Home</a>
-        <a href="/coaching/" data-close-menu="true">Coaching</a>
-        <a href="/speaking/" data-close-menu="true">Speaking</a>
-        <a href="/kontakt/" data-close-menu="true">Contact</a>
+        <a href="{{ '/' | relative_url }}" data-close-menu="true">Home</a>
+        <a href="{{ '/coaching/' | relative_url }}" data-close-menu="true">Coaching</a>
+        <a href="{{ '/speaking/' | relative_url }}" data-close-menu="true">Speaking</a>
+        <a href="{{ '/kontakt/' | relative_url }}" data-close-menu="true">Contact</a>
         <a href="https://calendly.com/juliakreft" target="_blank" rel="noopener" class="btn btn-primary">Work with me</a>
     </div>
 

@@ -10,10 +10,10 @@
             <div class="footer-links">
                 <h4 class="footer-nav-h4-el">Navigation</h4>
                 <ul>
-                    <li><a href="/" class="footer-nav-home-el">Home</a></li>
-                    <li><a href="/coaching/" class="footer-nav-coaching-el">Coaching</a></li>
-                    <li><a href="/speaking/" class="footer-nav-speaking-el">Speaking</a></li>
-                    <li><a href="/kontakt/" class="footer-nav-contact-el">Contact</a></li>
+                    <li><a href="{{ '/' | relative_url }}" class="footer-nav-home-el">Home</a></li>
+                    <li><a href="{{ '/coaching/' | relative_url }}" class="footer-nav-coaching-el">Coaching</a></li>
+                    <li><a href="{{ '/speaking/' | relative_url }}" class="footer-nav-speaking-el">Speaking</a></li>
+                    <li><a href="{{ '/kontakt/' | relative_url }}" class="footer-nav-contact-el">Contact</a></li>
                 </ul>
             </div>
 
@@ -36,8 +36,8 @@
         <div class="footer-bottom">
             <p class="footer-copy-el">&copy; 2025 Julia Kreft. Alle Rechte vorbehalten. &mdash; Fotos: Denise Claus Fotografie</p>
             <div class="footer-legal">
-                <a href="/impressum/" class="footer-impressum-el">Impressum</a>
-                <a href="/datenschutz/" class="footer-datenschutz-el">Datenschutz</a>
+                <a href="{{ '/impressum/' | relative_url }}" class="footer-impressum-el">Impressum</a>
+                <a href="{{ '/datenschutz/' | relative_url }}" class="footer-datenschutz-el">Datenschutz</a>
                 <a href="#" class="footer-agb-el" onclick="showModal('agb'); return false;">AGB</a>
             </div>
         </div>
