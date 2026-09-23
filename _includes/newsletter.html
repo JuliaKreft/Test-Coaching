@@ -1,13 +1,8 @@
 <section class="newsletter-section">
   <div class="newsletter-inner">
     <span class="section-label">Newsletter</span>
-    <h2 class="section-title" style="font-size:1.6rem;">Impulse per Mail</h2>
-    <p style="color:var(--text-body);margin:10px 0 22px;">Ab und zu ein ehrlicher Gedanke zu innerer Klarheit und Führung. Kein Spam.</p>
-    <!-- ============================================================
-         CLEVERREACH: Hier den Einbettungscode deines Formulars einfügen
-         (CleverReach → Formulare → dein Formular → Einbinden → HTML-Code).
-         Diesen Kommentar dann ersetzen.
-    ============================================================ -->
-    <a href="mailto:hello@juliakreft.de?subject=Newsletter" class="btn btn-primary">Eintragen</a>
+    <h2 class="section-title" style="font-size:1.6rem;">{% if page.lang == 'en' %}Impulses by email{% else %}Impulse per Mail{% endif %}</h2>
+    <p style="color:var(--text-body);margin:10px 0 22px;">{% if page.lang == 'en' %}Every now and then an honest thought on inner clarity and leadership. No spam, unsubscribe anytime.{% else %}Ab und zu ein ehrlicher Gedanke zu innerer Klarheit und F&uuml;hrung. Kein Spam, jederzeit abbestellbar.{% endif %}</p>
+    <a href="https://flow.cleverreach.com/fl/17b9ed02-7038-44db-a9c2-f4eb54997d6b/" target="_blank" rel="noopener" class="btn btn-primary">{% if page.lang == 'en' %}Subscribe to the newsletter{% else %}Zum Newsletter anmelden{% endif %}</a>
   </div>
 </section>
