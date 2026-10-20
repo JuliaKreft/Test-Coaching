@@ -26,6 +26,6 @@ Stelle **nicht** sofort deine Live-Seite um. Vorgehen:
 3. Der Newsletter erscheint automatisch am Ende jedes Blogartikels. Möchtest du ihn auch auf der Startseite? Sag mir Bescheid — oder füge `{%- raw -%}{% include newsletter.html %}{%- endraw -%}` an der gewünschten Stelle in `index.html` ein.
 
 ## Gut zu wissen
-- In `_config.yml` steht `url: https://juliakreft.de` (ohne „www"), passend zu deiner aktuellen Auslieferung. Wenn du lieber „www" möchtest, sag Bescheid.
+- In `_config.yml` steht `url: https://www.juliakreft.de` (ohne „www"), passend zu deiner aktuellen Auslieferung. Wenn du lieber „www" möchtest, sag Bescheid.
 - Die englischen Rechtstexte verweisen bewusst auf die deutschen Seiten (Impressum/Datenschutz auf Deutsch ist in DE Standard).
 - Neue Blogartikel: siehe **BLOG-ANLEITUNG.md** und die Datei **VORLAGE-blogpost.md**.

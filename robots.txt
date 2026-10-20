@@ -11,4 +11,4 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
-Sitemap: https://juliakreft.de/sitemap.xml
+Sitemap: https://www.juliakreft.de/sitemap.xml

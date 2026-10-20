@@ -15,10 +15,10 @@ alt_label: "EN"
       <span class="section-label">Blog</span>
       <h1 class="section-title">Impulse &amp; Gedanken</h1>
       <p class="section-subtitle" style="margin:12px 0 28px;">Kurze Texte zu innerer Klarheit, F&uuml;hrung und dem, was echte Ver&auml;nderung ausmacht.</p>
-      {% assign posts = site.posts | where: "lang", "de" %}
+      {% assign posts = site.posts %}
       {% for post in posts %}
       <div class="blog-list-item">
-        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a>{% if post.lang == "en" %} <span style="font-size:.7em;color:var(--text-muted);font-weight:400;">(English)</span>{% endif %}</h2>
         <div class="post-meta">{{ post.date | date: "%d.%m.%Y" }}</div>
         <p>{{ post.description }}</p>
       </div>

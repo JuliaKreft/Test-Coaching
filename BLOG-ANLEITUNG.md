@@ -18,8 +18,8 @@ title: "Dein Titel"
 description: "1–2 Sätze für Google & Vorschau."
 permalink: /blog/mein-thema/
 de_url: /blog/mein-thema/
-en_url: /blog/mein-thema/
-alt_url: /blog/mein-thema/
+en_url: /en/blog/
+alt_url: /en/blog/
 alt_label: "EN"
 ---
 ```
@@ -46,7 +46,7 @@ Bild in `assets/img/` ablegen und im Text einbinden:
 ```
 
 ## Englischer Artikel
-Gleiche Datei-Logik, aber `lang: en` und Pfad unter `/blog/...` (die englische Blog-Übersicht zeigt automatisch alle Artikel mit `lang: en`).
+Gleiche Datei-Logik, aber `lang: en` und Pfad unter `/blog/...` . Beide Blog-Übersichten (deutsch und englisch) zeigen automatisch alle Artikel; Artikel in der jeweils anderen Sprache werden mit „(English)“ bzw. „(in German)“ gekennzeichnet.
 
 **Tipp für Google/KI:** Beginne Abschnitte mit der Antwort, halte Absätze kurz (2–3 Sätze), nutze Zwischenüberschriften und Listen.
 

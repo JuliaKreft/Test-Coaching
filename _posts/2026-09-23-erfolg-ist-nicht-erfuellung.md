@@ -5,8 +5,8 @@ title: "Erfolg ist nicht dasselbe wie Erfüllung"
 description: "Warum äußerer Erfolg und inneres Erfülltsein zwei verschiedene Dinge sind – und was das für ambitionierte Menschen bedeutet."
 permalink: /blog/erfolg-ist-nicht-erfuellung/
 de_url: /blog/erfolg-ist-nicht-erfuellung/
-en_url: /blog/erfolg-ist-nicht-erfuellung/
-alt_url: /blog/erfolg-ist-nicht-erfuellung/
+en_url: /en/blog/
+alt_url: /en/blog/
 alt_label: "EN"
 ---
 
