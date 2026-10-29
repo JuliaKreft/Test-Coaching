@@ -1,9 +1,25 @@
 title: "Julia Kreft"
-url: "https://www.juliakreft.de"
+url: "https://juliakreft.de"
 baseurl: "/Test-Coaching"
-description: "Executive Coach & Speaker für Führungskräfte und Unternehmer"
+description: "Persönlichkeitsentwicklung Coach & Speaker für innere Transformation"
+# ── Google Analytics 4 ──────────────────────────────────────────────
+# Trage hier deine GA4-Mess-ID ein (Format: G-XXXXXXXXXX).
+# Zu finden in Google Analytics unter: Verwaltung → Datenströme → dein Datenstrom.
+# Solange hier der Platzhalter mit "X" steht, wird KEIN Tracking geladen.
+# Analytics lädt immer erst, nachdem der Besucher im Cookie-Banner "Alle akzeptieren" klickt.
+ga4_id: "G-E445D08VVM"
+permalink: /blog/:title/
 plugins:
   - jekyll-sitemap
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      lang: de
+      alt_url: /en/blog/
+      alt_label: "EN"
 exclude:
   - README.md
   - BLOG-ANLEITUNG.md

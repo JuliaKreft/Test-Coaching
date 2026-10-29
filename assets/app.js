@@ -41,12 +41,31 @@
         }, 800);
     }
 
+    /* ── Google Analytics 4 — lädt NUR nach aktiver Einwilligung ("Alle akzeptieren") ── */
+    function loadGA4() {
+        var id = window.JK_GA4_ID;
+        /* Keine ID oder noch Platzhalter (enthält "X") → nichts laden */
+        if (!id || id.indexOf('X') !== -1) return;
+        if (window.__ga4Loaded) return;
+        window.__ga4Loaded = true;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=' + id;
+        document.head.appendChild(s);
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { window.dataLayer.push(arguments); }
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', id, { anonymize_ip: true });
+    }
+
     /* ── Cookie Banner ── */
     function initCookieBanner() {
         var banner = document.getElementById('cookieBanner');
-        if (!banner) return;
         try {
-            if (!localStorage.getItem('jk-cookie-v2')) banner.classList.add('visible');
+            var choice = localStorage.getItem('jk-cookie-v2');
+            if (!choice && banner) banner.classList.add('visible');
+            if (choice === 'all') loadGA4();   /* frühere Zustimmung → GA4 laden */
         } catch(e) {}
     }
 
@@ -54,6 +73,15 @@
         try { localStorage.setItem('jk-cookie-v2', level); } catch(e) {}
         var banner = document.getElementById('cookieBanner');
         if (banner) banner.classList.remove('visible');
+        if (level === 'all') loadGA4();         /* Zustimmung erteilt → GA4 laden */
+    };
+
+    /* Widerruf / erneute Auswahl — vom Footer-Link "Cookie-Einstellungen" aufgerufen */
+    window.openCookieSettings = function() {
+        try { localStorage.removeItem('jk-cookie-v2'); } catch(e) {}
+        var banner = document.getElementById('cookieBanner');
+        if (banner) banner.classList.add('visible');
+        return false;
     };
 
     /* ── Modals ── */

@@ -1,13 +1,6 @@
 ---
-layout: post
-lang: de
 title: "Dein Titel hier"
 description: "Kurze Beschreibung in 1–2 Sätzen (erscheint bei Google und in Vorschauen)."
-permalink: /blog/dein-thema/
-de_url: /blog/dein-thema/
-en_url: /en/blog/
-alt_url: /en/blog/
-alt_label: "EN"
 ---
 
 Erster Absatz — hier direkt mit dem Kerngedanken beginnen.

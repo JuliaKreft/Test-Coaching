@@ -1,31 +1,31 @@
 # Blogartikel schreiben — Kurzanleitung
 
-Ein neuer Artikel ist einfach eine Textdatei. So geht's:
+Ein neuer Artikel ist einfach eine Textdatei. Die Web-Adresse entsteht **automatisch aus dem Dateinamen** – du musst dich um URLs nicht mehr kümmern.
 
 ## 1. Datei anlegen
-Lege im Ordner **`_posts/`** eine neue Datei an. Der Dateiname MUSS mit Datum beginnen:
+Lege im Ordner **`_posts/`** eine neue Datei an. Der Dateiname bestimmt Datum **und** Adresse:
 ```
-_posts/2026-10-05-mein-thema.md
+_posts/2026-10-26-mein-thema.md
 ```
+→ ergibt automatisch die Adresse **/blog/mein-thema/**
 
-## 2. Kopf (Front Matter) einfügen
-Ganz oben in die Datei (Werte anpassen):
+**Regeln für den Dateinamen (wichtig!):**
+- Beginnt mit dem Datum: `JJJJ-MM-TT-...`
+- Danach nur **Kleinbuchstaben a–z, Zahlen und Bindestriche**
+- **Keine** Umlaute (ä→ae, ö→oe, ü→ue, ß→ss), **keine** Fragezeichen, Leerzeichen, Kommas o. Ä.
+- Das **Datum darf nicht in der Zukunft** liegen (sonst wird der Artikel nicht veröffentlicht).
+
+## 2. Kopf (nur 2 Zeilen)
+Ganz oben in die Datei:
 ```
 ---
-layout: post
-lang: de
-title: "Dein Titel"
+title: "Dein Titel (hier sind Umlaute & Fragezeichen erlaubt)"
 description: "1–2 Sätze für Google & Vorschau."
-permalink: /blog/mein-thema/
-de_url: /blog/mein-thema/
-en_url: /en/blog/
-alt_url: /en/blog/
-alt_label: "EN"
 ---
 ```
+Mehr brauchst du nicht – Layout, Sprache und Adresse werden automatisch gesetzt.
 
 ## 3. Text schreiben (Markdown)
-Darunter einfach schreiben:
 ```
 Das ist ein normaler Absatz.
 
@@ -39,15 +39,13 @@ Das ist ein normaler Absatz.
 Ein [Link zum Kontakt](/kontakt/).
 ```
 
+## 4. Veröffentlichen
+Speichern → in GitHub Desktop **Commit** → **Push**. Nach 1–2 Min ist der Artikel live und erscheint automatisch auf der Blog-Übersicht.
+
 ## Bilder
-Bild in `assets/img/` ablegen und im Text einbinden:
+Bild in `assets/img/` ablegen und einbinden:
 ```
 ![Bildbeschreibung](/assets/img/mein-bild.jpg)
 ```
 
-## Englischer Artikel
-Gleiche Datei-Logik, aber `lang: en` und Pfad unter `/blog/...` . Beide Blog-Übersichten (deutsch und englisch) zeigen automatisch alle Artikel; Artikel in der jeweils anderen Sprache werden mit „(English)“ bzw. „(in German)“ gekennzeichnet.
-
-**Tipp für Google/KI:** Beginne Abschnitte mit der Antwort, halte Absätze kurz (2–3 Sätze), nutze Zwischenüberschriften und Listen.
-
-Die Vorlage findest du in **VORLAGE-blogpost.md** — kopieren, umbenennen, ausfüllen.
+Die fertige Vorlage findest du in **VORLAGE-blogpost.md** — kopieren, in `_posts/` legen, umbenennen, ausfüllen.
